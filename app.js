@@ -40,7 +40,10 @@ const app = express();
 
 
 app.use(
-  cors()
+  cors({
+    origin: "https://merry-rugelach-ad5ed9.netlify.app/",
+    credentials: true,
+  })
 );
 
 app.use(express.json());
