@@ -41,7 +41,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "0.0.0.0",
+    origin: "*",
     credentials: true, // Allow cookies and credentials
   })
 );
